@@ -12,7 +12,7 @@ import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 import BorderedBottomBox from '../../Wrapper/BorderedBottomBox'
 
-const Header = () => {
+const Header = ({ OpenModal }) => {
   return (
     <BorderedBottomBox>
 
@@ -59,7 +59,7 @@ const Header = () => {
               </Select>
             </Grid>
             <Grid item xs="auto">
-              <Button color="primary" variant="contained">
+              <Button color="primary" variant="contained" onClick={OpenModal}>
                 Sign in
               </Button>
             </Grid>
