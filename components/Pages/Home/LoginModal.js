@@ -57,7 +57,7 @@ const LoginModal = ({ open, CloseModal }) => {
                 variant="filled"
                 InputProps={{
                   endAdornment: (
-                    <InputAdornment>
+                    <InputAdornment position="end">
                       <Button onClick={() => setShowPassword(!showPassword)}>
                         {showPassword ? 'Hide' : 'Show'}
                       </Button>

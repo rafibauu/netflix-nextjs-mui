@@ -9,7 +9,8 @@ import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 import BorderedBottomBox from "../../Wrapper/BorderedBottomBox"
 import { styled } from '@mui/material/styles'
-import { useState } from "react";
+import { useState } from "react"
+import AddIcon from '@mui/icons-material/Add'
 
 const CustomAccordion = styled(Accordion)(({ theme }) => ({
   backgroundColor: theme.palette.grey[900],
@@ -47,7 +48,7 @@ const FAQ = () => {
         <Stack spacing={1} mb={8}>
           <CustomAccordion square expanded={activeItem === 'panel1'} onChange={handleChange('panel1')}>
               <CustomAccordionSummary
-                // expandIcon={<ExpandMoreIcon />}
+                expandIcon={<AddIcon sx={{ color: 'common.white', fontSize: 48 }} />}
                 aria-controls="panel1-content"
                 id="panel1-header"
               >
@@ -69,7 +70,7 @@ const FAQ = () => {
           </CustomAccordion>
           <CustomAccordion square expanded={activeItem === 'panel2'} onChange={handleChange('panel2')}>
             <CustomAccordionSummary
-              // expandIcon={<ExpandMoreIcon />}
+              expandIcon={<AddIcon sx={{ color: 'common.white', fontSize: 48 }} />}
               aria-controls="panel2-content"
               id="panel2-header"
             >
@@ -86,7 +87,7 @@ const FAQ = () => {
           </CustomAccordion>
           <CustomAccordion square expanded={activeItem === 'panel3'} onChange={handleChange('panel3')}>
             <CustomAccordionSummary
-              // expandIcon={<ExpandMoreIcon />}
+              expandIcon={<AddIcon sx={{ color: 'common.white', fontSize: 48 }} />}
               aria-controls="panel3-content"
               id="panel3-header"
             >
@@ -110,7 +111,7 @@ const FAQ = () => {
           </CustomAccordion>
           <CustomAccordion square expanded={activeItem === 'panel4'} onChange={handleChange('panel4')}>
             <CustomAccordionSummary
-              // expandIcon={<ExpandMoreIcon />}
+              expandIcon={<AddIcon sx={{ color: 'common.white', fontSize: 48 }} />}
               aria-controls="panel4-content"
               id="panel4-header"
             >
@@ -127,7 +128,7 @@ const FAQ = () => {
           </CustomAccordion>
           <CustomAccordion square expanded={activeItem === 'panel5'} onChange={handleChange('panel5')}>
             <CustomAccordionSummary
-              // expandIcon={<ExpandMoreIcon />}
+              expandIcon={<AddIcon sx={{ color: 'common.white', fontSize: 48 }} />}
               aria-controls="panel5-content"
               id="panel5-header"
             >
@@ -143,7 +144,7 @@ const FAQ = () => {
           </CustomAccordion>
           <CustomAccordion square expanded={activeItem === 'panel6'} onChange={handleChange('panel6')}>
             <CustomAccordionSummary
-              // expandIcon={<ExpandMoreIcon />}
+              expandIcon={<AddIcon sx={{ color: 'common.white', fontSize: 48 }} />}
               aria-controls="panel6-content"
               id="panel6-header"
             >
